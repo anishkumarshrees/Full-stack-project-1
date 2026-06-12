@@ -9,7 +9,9 @@ function App() {
   //javscript sabai eha hanni function rw return ko bich maa
 
   return (
+    <div>
     <h1>hello {2+2}</h1>
+    </div>
   )
 }
 
