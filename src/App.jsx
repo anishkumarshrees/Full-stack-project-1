@@ -1,17 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+
 import './App.css'
+import { BrowserRouter,Link,Route,Routes } from 'react-router-dom'
+import Home from './Home'
+import About from './About'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
   //javscript sabai eha hanni function rw return ko bich maa
 
   return (
-    <div>
-    <h1>hello {2+2}</h1>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/'element={<Home />} />
+      <Route path='about' element={<About />} />
+
+      
+    </Routes>
+    </BrowserRouter>
   )
 }
 
