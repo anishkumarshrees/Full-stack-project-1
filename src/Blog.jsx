@@ -1,18 +1,17 @@
+import './Blog.css'
 import { Link } from 'react-router-dom'
-import './About.css'
 
-
-function About(){
-return(
-   <>
-    <nav className="navbar">
+function Blog(){
+    return(
+        <>
+        <nav className="navbar">
   <div className="logo">MyBlog</div>
 
   <ul className="nav-links">
     <li><Link to="/">Home</Link></li>
-    <li><Link to="/blog">Blog</Link></li>
+    <li><a href="#">Blog</a></li>
     <li><a href="#">Categories</a></li>
-    <li><a href="/About">About</a></li>
+    <li><Link to="/about">About</Link></li>
     <li><a href="#">Contact</a></li>
   </ul>
 
@@ -21,10 +20,9 @@ return(
     <button className="theme-btn">🌙</button>
   </div>
 </nav>
-<div className='hello'>this is about page
+<div className='hello'>this is blog page
 </div>
-   </>
-)
+        </>
+    )
 }
-
-export default About
+export default Blog
