@@ -79,3 +79,8 @@ body{
 .icons button:hover{
   transform:scale(1.2) rotate(10deg);
 }
+.container{
+  display: flex;
+  gap: 15px;
+  padding-top: 10px;
+}

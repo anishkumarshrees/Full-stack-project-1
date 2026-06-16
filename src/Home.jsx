@@ -1,4 +1,5 @@
 import About from './About'
+import Container from './Container'
 import './Home.css'
 import { Link } from 'react-router-dom'
 
@@ -22,6 +23,10 @@ function Home(){
     <button className="theme-btn">🌙</button>
   </div>
 </nav>
+<div className='container'>
+<Container title="Hello" image="https://images.unsplash.com/photo-1498050108023-c5249f4df085"/>
+<Container title="Hello" image="https://images.unsplash.com/photo-1506744038136-46273834b3fb"/>
+</div>
         </>
     )
 }

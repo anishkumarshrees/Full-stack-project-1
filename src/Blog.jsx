@@ -1,5 +1,6 @@
 import './Blog.css'
 import { Link } from 'react-router-dom'
+import Container from './Container'
 
 function Blog(){
     return(
@@ -21,6 +22,9 @@ function Blog(){
   </div>
 </nav>
 <div className='hello'>this is blog page
+</div>
+<div>
+  <Container text="blog" />
 </div>
         </>
     )
