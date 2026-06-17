@@ -4,6 +4,8 @@ import Home from './Home'
 import About from './About'
 import Blog from './Blog'
 import Test from './Test'
+import UseState from './UseState'
+import UseEffect from './UseEffect'
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <Route path='/about' element={<About />} />
       <Route path='/blog' element={<Blog/>} />
       <Route path='/test' element={<Test/>} />
+      <Route path='/useState' element={<UseState/>} />
+      <Route path='/useEffect' element={<UseEffect/>} />
 
       
     </Routes>
